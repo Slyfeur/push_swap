@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/12 10:46:49 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/26 10:38:05 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/08/26 15:15:43 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int			ft_error(char **argv);
 int			ft_double(char **argv);
 int			ft_int(char **argv);
 int			ft_digi(char **argv);
-int			ordre(char **argv);
+int			ordre(int argc, char **argv);
 void		pusha(t_liste *liste);
 void		pushb(t_liste *liste);
 void		swapa(t_liste *liste);
@@ -51,5 +51,6 @@ int			num_mid(t_liste *liste);
 void		solver3(t_liste *liste);
 void		solver5(t_liste *liste);
 int			sort2(t_structure *n, size_t l);
+void		freeall(t_liste *liste);
 
 #endif

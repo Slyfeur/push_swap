@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 08:37:10 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/26 10:59:37 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/08/26 11:53:03 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,10 @@ t_structure	*tri(int argc, char **argv, t_liste *liste)
 	i = 0;
 	x = malloc(sizeof(t_liste) * argc);
 	if (!x)
+	{
+		freeall(liste);
 		return (NULL);
+	}
 	while (k < argc)
 	{
 		x[i++] = ft_atoi(argv[k++]);

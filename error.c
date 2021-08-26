@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 11:12:07 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/26 09:19:01 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/08/26 15:16:12 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,16 +83,19 @@ int	ft_digi(char **argv)
 	return (1);
 }
 
-int	ordre(char **argv)
+int	ordre(int argc, char **argv)
 {
 	int	i;
 
 	i = 1;
-	while (ft_atoi(argv[i]) < ft_atoi(argv[i + 1]))
+	if (argc > 3)
 	{
-		i++;
-		if (argv[i + 1] == NULL)
-			return (0);
+		while (ft_atoi(argv[i]) < ft_atoi(argv[i + 1]))
+		{
+			i++;
+			if (argv[i + 1] == NULL)
+				return (0);
+		}
 	}
 	return (1);
 }

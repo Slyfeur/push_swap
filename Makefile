@@ -6,7 +6,7 @@
 #    By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/12 10:43:01 by tuytters          #+#    #+#              #
-#    Updated: 2021/08/26 10:39:05 by tuytters         ###   ########.fr        #
+#    Updated: 2021/08/26 14:37:56 by tuytters         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ DIR_LIBFT	=	./libft/
 DIR_SRC		=	./
 DIR_HEADERS =	./
 
-CFLAGS	=		-Wall -Wextra -Werror #-fsanitize=address -g
+CFLAGS	=		-Wall -Wextra -Werror 
 
 SRCS	=		push_swap.c		\
 				error.c			\
@@ -30,6 +30,7 @@ SRCS	=		push_swap.c		\
 				radixsort.c		\
 				solver3.c		\
 				solver5.c		\
+				free.c			\
 				max_min_mid.c
 
 OUT		=		push_swap
