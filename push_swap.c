@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/12 08:58:23 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/26 15:16:07 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/08/27 08:43:37 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ int	main(int argc, char **argv)
 	liste = ft_initialise_liste(argc, argv, liste);
 	if (liste == NULL)
 		return (0);
-	if (argc == 3 && argv[2] > argv[1])
+	if (argc == 3 && liste->a->content > liste->a->next->content)
 		rotate_a(liste);
 	tri(argc, argv, liste);
 	if (liste == NULL)

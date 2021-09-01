@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 08:37:10 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/26 11:53:03 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/09/01 10:25:15 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static void	quicksort(int x[], int min, int max)
 	int	pivot;
 
 	if (min < max)
-	{
+	{	
 		pivot = partition(x, min, max);
 		quicksort(x, min, pivot - 1);
 		quicksort(x, pivot + 1, max);
@@ -84,9 +84,7 @@ t_structure	*tri(int argc, char **argv, t_liste *liste)
 		return (NULL);
 	}
 	while (k < argc)
-	{
 		x[i++] = ft_atoi(argv[k++]);
-	}
 	quicksort(x, 0, argc - 2);
 	tri2(liste, x);
 	if (x)

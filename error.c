@@ -6,7 +6,7 @@
 /*   By: tuytters <tuytters@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 11:12:07 by tuytters          #+#    #+#             */
-/*   Updated: 2021/08/26 15:16:12 by tuytters         ###   ########.fr       */
+/*   Updated: 2021/08/27 08:12:14 by tuytters         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ int	ordre(int argc, char **argv)
 	int	i;
 
 	i = 1;
-	if (argc > 3)
+	if (argc >= 3)
 	{
 		while (ft_atoi(argv[i]) < ft_atoi(argv[i + 1]))
 		{
